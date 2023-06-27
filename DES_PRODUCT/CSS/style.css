@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #777979;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #777979;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0F94CF;
+}
+
+.wrap {
+    margin: auto 75px;
+}
+
+.title__color,
+i {
+    color: #0F94CF;
+}
+
+.price__color {
+    color: #FD475A;
+}
+
+.background__0F94CF {
+    background-color: #0F94CF;
+}
+
+.title>h5::after {
+    content: "";
+    border: 1px solid #0F94CF;
+    display: block;
+    margin: 0;
+    transform: translateY(10px);
+}
+
+.comment button {
+    border: 1px solid #0F94CF;
+    color: #0F94CF;
+}
+
+.comment button:hover {
+    background-color: #0F94CF !important;
+    color: white;
+}
+
+/* HEADER */
+.header__navbar {
+    position: sticky;
+    top : 0;
+    left : 0;
+    right : 0;
+    width : 100%;
+    z-index: 999;
+    background: #F3F9FB;
+} 
+
+.header__logo i {
+    font-size: 2rem;
+}
+
+.background_color_second {
+    background-color: #F3F9FB !important;
+}
+
+.header__search input {
+    box-shadow: none !important;
+}
+
+.nav-item {
+    background-color: #F3F9FB;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.nav-item a {
+    color: #777979;
+}
+
+.active a {
+    background-color: #0F94CF;
+    border-radius: 20px;
+    color: white !important;
+}
+
+.active .nav-link i {
+    color: white !important;
+}
+
+/* MAIN */
+
+.menu * {
+    color: #777979;
+}
+
+.menu>span {
+    color: #0F94CF;
+}
+
+.choose__product>div>div>div:nth-child(2) {
+    background-color: #0F94CF;
+}
+
+.choose__product__version .version {
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.choose__product__version .version:hover {
+    border: 1px solid #0F94CF;
+}
+
+/* OFFER */
+.product__offer {
+    border: 1px solid #FD475A;
+}
+
+.product__offer .offer__title {
+    background-color: #FD475A;
+    transform: translate(0, -50%);
+    margin: 0;
+}
+
+.product__offer li {
+    color: #FD475A;
+}
+
+#buyNow {
+    border: 2px solid #0F94CF;
+    background-color: white;
+}
+
+#buyNow * {
+    color: #0F94CF;
+    transition: 0.8s;
+}
+
+#buyNow:hover {
+    background-color: #0F94CF;
+}
+
+#buyNow:hover * {
+    color: white;
+}
+
+#installment {
+    border: 2px solid #FD475A;
+    background-color: white;
+}
+
+#installment * {
+    color: #FD475A;
+    transition: 0.8s;
+}
+
+#installment:hover {
+    background-color: #FD475A;
+}
+
+#installment:hover * {
+    color: white;
+}
+
+#addCart {
+    border: 2px solid #FF990E;
+    background-color: white;
+}
+
+#addCart * {
+    color: #FF990E;
+    transition: 0.8s;
+}
+
+#addCart:hover {
+    background-color: #FF990E;
+}
+
+#addCart:hover * {
+    color: white;
+}
+
+/* SPECIFICATION */
+.specifications__left *:no-button {
+    color: black;
+}
+ 
+.specifications__left__content__collage .h4 {
+    text-align: center;
+}
+
+.specifications__left__content__collage {
+    height: 789px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0F94CF;
+}
+
+footer .row * {
+    color: white !important;
+}
+
+footer .row a {
+    text-decoration: none;
+}
+
+footer .row li:hover a {
+    text-decoration: underline white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 575.98px) {
+    .wrap {
+        margin: auto 0;
+    }
+
+    .header__logo>h1 {
+        display: none;
+    }
+
+    .header__user>* {
+        display: block;
+    }
+
+    .header__user__line {
+        display: none;
+    }
+
+    .product>div:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .wrap {
+        margin: auto 0;
+    }
+
+    .header__logo>h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrap {
+        margin: auto 10px;
+    }
+
+    .header__user>* {
+        display: block;
+    }
+
+    .header__user__line {
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 1399.98px) {}

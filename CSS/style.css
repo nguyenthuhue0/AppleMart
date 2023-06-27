@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #777979;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #777979;
+}
+
+.wrap {
+    margin: auto 75px;
+}
+
+.title__color,
+i {
+    color: #0F94CF;
+}
+
+/* HEADER */
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    z-index: 9999;
+  }
+  
+  .fixed-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .fixed-menu li {
+    float: left;
+  }
+  
+  .fixed-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .fixed-menu li a:hover {
+    background-color: #ddd;
+  }
+
+.header__logo i {
+    font-size: 2rem;
+}
+
+.background_color_second {
+    background-color: #F3F9FB !important;
+}
+
+.header__search input {
+    box-shadow: none !important;
+}
+
+.nav-item {
+    background-color: #F3F9FB;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.nav-item a {
+    color: #777979;
+}
+
+.active a {
+    background-color: #0F94CF;
+    border-radius: 20px;
+    color: white !important;
+}
+
+.active .nav-link i {
+    color: white !important;
+}   
+
+.header__navbar {
+    position: sticky;
+    top : 0;
+    left : 0;
+    right : 0;
+    width : 100%;
+    z-index: 999;
+    background: #F3F9FB;
+}    
+
+
+
+/* CONTENT */
+.title>h5::after {
+    content: "";
+    border: 1px solid #0F94CF;
+    display: block;
+    margin: 0;
+    transform: translateY(10px);
+}
+
+.product .card {
+    border: 1px solid #efefef !important;
+    border-radius: 5% !important;
+    transition: 0.2s;
+}
+
+.product .card:hover {
+    transform: scale(1.1);
+}
+
+.product .card .img {
+    border-bottom: none;
+    background-color: #f5f5f5;
+    border-radius: 5% 5% 0 0 !important;
+}
+
+.product .card .img * {
+    height: auto;
+}
+
+.product .card .card-title {
+    width: 175px;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product .card .card-text {
+    color: #249B3E;
+}
+
+.page-link {
+    border: none;
+    color: gray;
+}
+
+.page-link:hover {
+    background-color: white;
+    border: none;
+    color: gray;
+}
+
+.pagination button {
+    box-shadow: 0px 3px 6px rgba(131, 146, 166, 0.1);
+    border-radius: 20px;
+}
+
+.page-item .page-link {
+    transition: all 0.5s;
+}
+
+.page-item.active .page-link {
+    background-color: #0F94CF;
+    border-radius: 20px !important;
+}
+
+.pagination .page-item:hover .page-link {
+    background-color: #0F94CF;
+    border-radius: 20px !important;
+    color: white;
+}
+
+.phukien__product .card .img * {
+    width: 80%;
+    height: auto;
+}
+
+.phukien__product .card .card-text {
+    color: #249B3E;
+}
+
+.phukien__product .card {
+    border: none !important;
+}
+
+.phukien__product .img {
+    width: 100% !important;
+    height: auto;
+}
+
+.phukien__product .card:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0F94CF;
+}
+
+footer .row * {
+    color: white !important;
+}
+
+footer .row a {
+    text-decoration: none;
+}
+
+footer .row li:hover a {
+    text-decoration: underline white;
+}
+
+
+/* RESPONSIVE */
+    @media (max-width: 575.98px) { 
+        .wrap {
+            margin: auto 0;
+        }
+
+        .header__logo>h1 {
+            display: none;
+        }
+
+        .header__user>* {
+            display: block;
+        }
+
+        .header__user__line {
+            display: none;
+        }
+    
+    }
+
+    @media (max-width: 767.98px) {
+        .wrap {
+            margin: auto 0;
+        }
+
+        .header__logo>h1 {
+            display: none;
+        } 
+    }
+
+    @media (max-width: 991.98px) {
+        .wrap {
+            margin: auto 10px;
+        }
+
+        .header__user>* {
+            display: block;
+        }
+
+        .header__user__line {
+            display: none;
+        } 
+ 
+        .product .card .card-title {
+            width: 160px;
+        }
+
+    } 
+
+    @media (max-width: 1199.98px) {}
+
+    @media (max-width: 1399.98px) {}
